@@ -17,7 +17,7 @@
                         type="object"
                         name="action_demo_set_done"
                         class="oe_highlight"
-                        attrs="{'invisible': ['|', '|', ('provider_code', '!=', 'demo'), ('capture_manually', '=', True), ('state', '!=', 'pending')]}"/>
+                        attrs="{'invisible': ['|', '|', ('provider_code', '!=', 'demo'), ('capture_manually', '=', False), ('state', '!=', 'pending')]}"/>
                 <button string="Cancel"
                         type="object"
                         name="action_demo_set_canceled"
