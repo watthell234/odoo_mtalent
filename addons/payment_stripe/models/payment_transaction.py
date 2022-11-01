@@ -254,7 +254,7 @@ class PaymentTransaction(models.Model):
             'amount': payment_utils.to_minor_currency_units(self.amount, self.currency_id),
             'currency': self.currency_id.name.lower(),
             'description': self.reference,
-            'capture_method': 'manual' if self.provider_id.capture_manually else 'automatic',
+            'capture_method':  'automatic',
         }
         if payment_by_token:
             payment_intent_payload.update(
